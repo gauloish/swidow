@@ -13,7 +13,7 @@ fi
 SRC_DIR=$(cd $(dirname $0) && pwd)
 
 THEME_NAME=Swidow
-THEME_VARIANTS=('-blue' '-red' '-pink' '-purple' '-green' '-orange' '-brown' '-grey' '-black')
+THEME_VARIANTS=('-blue' '-red' '-pink' '-purple' '-green' '-orange' '-brown' '-grey' '-black' '-nord' '-dracula')
 COLOR_VARIANTS=('' '-dark')
 
 usage() {
@@ -33,6 +33,8 @@ usage() {
   printf "  %-25s%s\n" "-orange" "Orange color folder version"
   printf "  %-25s%s\n" "-brown" "Brown color folder version"
   printf "  %-25s%s\n" "-black" "Black color folder version"
+  printf "  %-25s%s\n" "-nord" "Nord color folder version"
+  printf "  %-25s%s\n" "-dracula" "Dracula color folder version"
   printf "  %-25s%s\n" "-h, --help" "Show this help"
 }
 
@@ -187,6 +189,12 @@ while [[ $# -gt 0 ]]; do
       ;;
     -red)
       theme="-red"
+      ;;
+    -nord)
+      theme="-nord"
+      ;;
+    -dracula)
+      theme="-dracula"
       ;;
     -h|--help)
       usage
