@@ -12,8 +12,8 @@ fi
 
 SRC_DIR=$(cd $(dirname $0) && pwd)
 
-THEME_NAME=Win10Sur
-THEME_VARIANTS=('-black' '-blue')
+THEME_NAME=Swidow
+THEME_VARIANTS=('-blue' '-red' '-pink' '-purple' '-green' '-orange' '-brown' '-grey' '-black')
 COLOR_VARIANTS=('' '-dark')
 
 usage() {
